@@ -3,12 +3,12 @@
 Data is from [here](http://travel.state.gov/law/family_issues/death/death_600.html)
 
 The data is a little messy in the geographics.  I did some Levenshtein matches to 
-sync it with ISO codes, but there a fair number of data irregularities that made things hard---
-where Levs didn't match, I ran the address through googlemaps api, which did a pretty
+sync it with ISO codes, but there are a fair number of data irregularities that made things hard---
+where Levs didn't match, I ran the address through googlemaps API, which did a pretty
 good job of identifying the country.
 
 Over the next couple of days, with my 1000 API calls per day, I'm going to go back to the original list
-and record lat-longs.  
+and record lat-longs, so the actual accident sites, by city, will be available for mapping.
 
 The most useful item in this repo is probably output/useful.csv
 
@@ -24,9 +24,9 @@ Levenshteins were cheaper to run than API calls, but also due to data cleaning h
 of side effects, making imperative loops more necessary and clean functions trickier.  A lot
 of this cleaning might have been easier in R.
 
-This gives you: 
+Anyway, the output/useful.csv file gives you: 
 
-* /common/ country name
+* /common/ country name (more often than the semi-useless formal one)
 * ISO-3166-alpha-2
 * ISO-3166-alpha-3
 * Cause of Death
