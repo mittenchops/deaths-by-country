@@ -10,9 +10,9 @@ good job of identifying the country.
 Over the next couple of days, with my 1000 API calls per day, I'm going to go back to the original list
 and record lat-longs, so the actual accident sites, by city, will be available for mapping.
 
-The most useful item in this repo is probably output/useful.csv
+The most useful item in this repo is probably [output/useful.csv](output/useful.csv).
 
-The source file is source/report.xls
+The source file is [source/report.xls](source/report.xls)
 
 There are several correspondences in the source folder from various ISO crosswalks---licenses
 looked open source.  Please let me know if I got that incorrect from anyone.  (The ISO itself
@@ -24,7 +24,7 @@ Levenshteins were cheaper to run than API calls, but also due to data cleaning h
 of side effects, making imperative loops more necessary and clean functions trickier.  A lot
 of this cleaning might have been easier in R.
 
-Anyway, the output/useful.csv file gives you: 
+Anyway, the [output/useful.csv](output/useful.csv) file gives you: 
 
 * /common/ country name (more often than the semi-useless formal one)
 * ISO-3166-alpha-2
